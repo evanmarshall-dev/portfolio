@@ -1,10 +1,13 @@
-import Header from "./header/Header";
+import Header from "./header/page";
+import Hero from "./hero/page";
 
 export default function Home() {
   return (
-    <main>
+    <main className="z-0 h-screen overflow-scroll snap-y snap-mandatory">
       <Header />
-      <h1 className="text-blue-300">Portfolio HOMEPAGE</h1>
+      <section id="hero" className="snap-center">
+        <Hero />
+      </section>
     </main>
   );
 }

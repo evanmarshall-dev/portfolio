@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 15, 22, 38;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 245, 245, 245;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 245, 245, 245;
+    --background-start-rgb: 15, 22, 38;
+    --background-end-rgb: 15, 22, 38;
   }
 }
 
@@ -24,4 +24,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-[rgb(171, 152, 122)]/40 hover:text-[rgb(171, 152, 122)]/40;
+  }
 }
