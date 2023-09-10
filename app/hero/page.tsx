@@ -23,7 +23,7 @@ const hero = (props: Props) => {
       <BackgroundCircles />
       <img
         className="relative object-cover w-32 h-32 mx-auto rounded-full"
-        src="/adventure-profile.png"
+        src="/evan-marshall-profile.png"
         alt="AI generated portrait of Evan Marshall"
       />
       <div className="z-20">
