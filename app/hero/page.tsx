@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import BackgroundCircles from "./background-circles";
+import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
 
 type Props = {};
