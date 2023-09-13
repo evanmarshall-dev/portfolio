@@ -2,6 +2,8 @@ import Hero from "./hero/page";
 import About from "./about/page";
 import WorkExperience from "./experience/page";
 import Skills from "./skills/page";
+import Projects from "./work/page";
+import Contact from "./contact/page";
 
 export default function Home() {
   return (
@@ -17,6 +19,12 @@ export default function Home() {
       </section>
       <section id="skills" className="snap-start">
         <Skills />
+      </section>
+      <section id="projects" className="snap-start">
+        <Projects />
+      </section>
+      <section id="contact" className="snap-start">
+        <Contact />
       </section>
     </div>
   );

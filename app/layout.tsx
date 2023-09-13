@@ -32,15 +32,17 @@ export default function RootLayout({
             >
               <SocialIcon
                 url="https://github.com/evanmarshall-dev"
-                fgColor="#ab987a"
+                fgColor="currentColor"
                 bgColor="transparent"
                 target="_blank"
+                className="hover:text-[#ab987a] text-[#ab987a]/60"
               />
               <SocialIcon
                 url="https://www.linkedin.com/in/evan-marshall-dev/"
-                fgColor="#ab987a"
+                fgColor="currentColor"
                 bgColor="transparent"
                 target="_blank"
+                className="hover:text-[#ab987a] text-[#ab987a]/60"
               />
             </motion.div>
             <motion.div
@@ -50,12 +52,13 @@ export default function RootLayout({
               className="flex flex-row items-center text-[#ab987a] cursor-pointer"
             >
               <SocialIcon
-                className="cursor-pointer"
                 network="email"
-                fgColor="#ab987a"
+                fgColor="currentColor"
                 bgColor="transparent"
+                target="_blank"
+                className="hover:text-[#ab987a] text-[#ab987a]/60 cursor-pointer"
               />
-              <p className="hidden text-sm text-[#ab987a] uppercase md:inline-flex">
+              <p className="hidden text-sm text-[#ab987a]/60 hover:text-[#ab987a] uppercase md:inline-flex">
                 Get In Touch
               </p>
             </motion.div>
