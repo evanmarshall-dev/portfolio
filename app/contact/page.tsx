@@ -1,3 +1,5 @@
+import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+
 type Props = {};
 
 const contact = (props: Props) => {
@@ -13,6 +15,20 @@ const contact = (props: Props) => {
             Let&apos;s Chat
           </span>
         </h4>
+        <div className="space-y-10">
+          <div className="flex items-center justify-center space-x-5">
+            <PhoneIcon className="text-[#ab987a] h-7 w-7 animate-pulse" />
+            <p className="text-2xl">+19023855551</p>
+          </div>
+          <div className="flex items-center justify-center space-x-5">
+            <EnvelopeIcon className="text-[#ab987a] h-7 w-7 animate-pulse" />
+            <p className="text-2xl">me@evanmarshall.dev</p>
+          </div>
+          <div className="flex items-center justify-center space-x-5">
+            <MapPinIcon className="text-[#ab987a] h-7 w-7 animate-pulse" />
+            <p className="text-2xl">Kentville, NS CAN</p>
+          </div>
+        </div>
       </div>
     </div>
   );
