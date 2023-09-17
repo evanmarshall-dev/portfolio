@@ -17,7 +17,7 @@ const work = (props: Props) => {
       <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-2xl">
         Some of my Work
       </h3>
-      <div className="relative z-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory">
+      <div className="relative z-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(255,83,61)]/80">
         {/* Map through the above projects array and for the title of each project set to the value of i, starting at 1. */}
         {projects.map((project, i) => (
           <div
