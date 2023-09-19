@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
+import schemas from "./sanity/schemas";
 
 const config = defineConfig({
   projectId: "a5uyscvx",
@@ -11,6 +12,8 @@ const config = defineConfig({
   basePath: "/admin",
   // deskTool is a top level view within Sanity Studio, which is needed to view the studio.
   plugins: [deskTool()],
+  // Below is where we define our schemas and add all schemas (from schemas/index.ts) to the schema type array.
+  schema: { types: schemas },
 });
 
 export default config;

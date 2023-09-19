@@ -32,5 +32,19 @@ const project = {
         },
       ],
     },
+    {
+      name: "url",
+      title: "URL",
+      type: "url",
+    },
+    {
+      name: "content",
+      title: "Content",
+      type: "array",
+      // An array of type block is Sanities way of doing a rich text editor.
+      of: [{ type: "block" }],
+    },
   ],
 };
+
+export default project;
