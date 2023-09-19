@@ -7,6 +7,8 @@ import { Inter } from "next/font/google";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
+// import { getPages } from "@/sanity/sanity-utils";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,6 +22,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Get all pages (Sanity).
+  // TODO: Might not work in a single page app layout. Also might not work because framer motion requires this to be a client component which does not work with async functions.
+  // const pages = await getPages();
+
   return (
     <html lang="en">
       <body className={inter.className}>

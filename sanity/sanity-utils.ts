@@ -1,6 +1,7 @@
-import { Project } from "@/types/Project";
 import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
+import { Project } from "@/types/Project";
+import { Page } from "@/types/Page";
 
 // This is where we will store all of the functions we will use to grab data.
 // * For getProjects we return a Promise which is an array of Projects. This allows us to specify TS types from types/project.ts.
@@ -24,5 +25,31 @@ export async function getProjects(): Promise<Project[]> {
       url,
       content
     }`
+  );
+}
+
+// Creating types/Page allows us to return a promise of an array of Pages, which we can use to specify TS types in the project.
+export async function getPages(): Promise<Page[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "page"]{
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+    }`
+  );
+}
+
+// The difference between this and pages is that we pass in content for groq as it is an individual page and not going to be used on say a navbar where full content is not needed.
+export async function getPage(slug: string): Promise<Page> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "page" && slug.current == $slug][0]{
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+      content
+    }`,
+    { slug }
   );
 }
