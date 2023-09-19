@@ -1,4 +1,4 @@
-import { Project } from "@/types/project";
+import { Project } from "@/types/Project";
 import { createClient, groq } from "next-sanity";
 
 // This is where we will store all of the functions we will use to grab data.

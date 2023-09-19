@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-const BackgroundCircles = (props: Props) => {
+export default function BackgroundCircles({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -21,6 +21,4 @@ const BackgroundCircles = (props: Props) => {
       <div className="absolute border border-[rgb(63,69,81)] rounded-full h-[800px] w-[800px] mt-52 animate-ping" />
     </motion.div>
   );
-};
-
-export default BackgroundCircles;
+}

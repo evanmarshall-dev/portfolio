@@ -5,7 +5,7 @@ import Skill from "./Skill";
 
 type Props = {};
 
-const skills = (props: Props) => {
+export default function skills({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -39,6 +39,4 @@ const skills = (props: Props) => {
       </div>
     </motion.div>
   );
-};
-
-export default skills;
+}

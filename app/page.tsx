@@ -32,18 +32,18 @@ export default async function Home() {
             // Add key of project id and pass in project name.
             <div
               key={project._id}
-              className="border border-gray-500 rounded-lg p-3"
+              className="p-1 transition border-2 border-gray-500 rounded-lg hover:scale-105 hover:border-blue-500"
             >
               {project.image && (
                 <Image
                   src={project.image}
                   alt={project.name}
-                  width={250}
+                  width={100}
                   height={100}
-                  className="object-cover rounded-lg border border-gray-500"
+                  className="object-cover border border-gray-500 rounded-lg"
                 />
               )}
-              <div className="font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
+              <div className="mt-2 font-extrabold text-transparent bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text">
                 {project.name}
               </div>
             </div>

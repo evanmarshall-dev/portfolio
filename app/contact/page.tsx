@@ -12,7 +12,7 @@ type Inputs = {
 
 type Props = {};
 
-const contact = (props: Props) => {
+export default function contact({}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = formData => {
     // TODO: Currently setup for opening mail client for user to send form, but update in future to use backend to send email directly from form.
@@ -86,6 +86,4 @@ const contact = (props: Props) => {
       </div>
     </div>
   );
-};
-
-export default contact;
+}

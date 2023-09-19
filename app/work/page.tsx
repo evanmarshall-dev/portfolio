@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-const work = (props: Props) => {
+export default function work({}: Props) {
   // Change numbers in array to add more projects. Currently, there are 5 projects.
   const projects = [1, 2, 3, 4, 5];
   return (
@@ -52,6 +52,4 @@ const work = (props: Props) => {
       <div className="w-full absolute top-[30%] bg-[#ab987a]/60 left-0 h-[500px] -skew-y-12" />
     </motion.div>
   );
-};
-
-export default work;
+}

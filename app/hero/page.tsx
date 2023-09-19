@@ -6,7 +6,7 @@ import Link from "next/link";
 
 type Props = {};
 
-const hero = (props: Props) => {
+export default function hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
       "Hi friends! it's me, Evan Marshall",
@@ -18,6 +18,7 @@ const hero = (props: Props) => {
     loop: true,
     delaySpeed: 2000,
   });
+
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
@@ -52,6 +53,4 @@ const hero = (props: Props) => {
       </div>
     </div>
   );
-};
-
-export default hero;
+}

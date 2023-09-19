@@ -5,7 +5,7 @@ import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 
-const experience = (props: Props) => {
+export default function page({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,6 +22,4 @@ const experience = (props: Props) => {
       </div>
     </motion.div>
   );
-};
-
-export default experience;
+}

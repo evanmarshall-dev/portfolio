@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-const ExperienceCard = (props: Props) => {
+export default function ExperienceCard({}: Props) {
   return (
     <div>
       <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
@@ -27,7 +27,7 @@ const ExperienceCard = (props: Props) => {
             {/* Tech used */}
           </div>
           <p className="py-5 text-gray-300 uppercase">2017 - Present</p>
-          <ul className="ml-5 text-lg list-disc space-y-4">
+          <ul className="ml-5 space-y-4 text-lg list-disc">
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
@@ -38,6 +38,4 @@ const ExperienceCard = (props: Props) => {
       </article>
     </div>
   );
-};
-
-export default ExperienceCard;
+}
