@@ -1,8 +1,7 @@
 // On previous versions of NextJS you would export a function for get static props and if you has multiple routes on the page you would have to do function for get static paths. This would make it so that stuff that is server side would be loaded on client.
 // Now with NextJS 13 you can simply change the above function into an async await and pass in getProjects().
 import { getProjects } from "@/sanity/sanity-utils";
-// TODO: The below package causes errors when trying to hydrate the page. Something with client side and server side rendering.
-// import { PortableText } from "@portabletext/react";
+import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
 export default async function projects() {
@@ -55,14 +54,9 @@ export default async function projects() {
                 View Project
               </a>
               {/* Instead of looping over project.content we will use a react package called PortableText. */}
-              <p className="text-lg text-center md:text-left">
-                {/* TODO: See why hydration server error when using this package on the page. */}
-                {/* <PortableText value={project.content} /> */}
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Cupiditate laboriosam voluptas at reprehenderit quo fugiat error
-                eius a exercitationem quaerat recusandae, delectus optio dolore
-                esse, laborum eligendi quia consequatur vitae.
-              </p>
+              <div className="text-lg text-center md:text-left">
+                <PortableText value={project.content} />
+              </div>
             </div>
           </div>
         ))}
