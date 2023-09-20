@@ -27,7 +27,7 @@ export default function ExperienceCard({}: Props) {
             {/* Tech used */}
           </div>
           <p className="py-5 text-gray-300 uppercase">2017 - Present</p>
-          <ul className="ml-5 space-y-4 text-lg list-disc">
+          <ul className="ml-5 text-lg list-disc space-y-4">
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
