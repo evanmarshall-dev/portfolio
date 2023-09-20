@@ -1,7 +1,7 @@
 "use client";
 
 import "../globals.css";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa6";
@@ -11,11 +11,12 @@ import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Evan Marshall | Web Developer",
-  description:
-    "Web developer crafting business websites. Expert in branding design, consultation, and monthly maintenance. Optimize your online presence. Explore my portfolio or 📞 📧 me for a free consultation.",
-};
+// TODO: Issues with deploying due to adding meta data to a client component. Figure out how to do this. Maybe another Framer motion issue?
+// export const metadata: Metadata = {
+//   title: "Evan Marshall | Web Developer",
+//   description:
+//     "Web developer crafting business websites. Expert in branding design, consultation, and monthly maintenance. Optimize your online presence. Explore my portfolio or 📞 📧 me for a free consultation.",
+// };
 
 export default function RootLayout({
   children,
