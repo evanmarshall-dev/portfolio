@@ -3,6 +3,7 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {};
 
@@ -20,10 +21,12 @@ export default function hero({}: Props) {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen overflow-hidden text-center space-y-8">
+    <div className="flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
-      <img
-        className="relative object-cover w-32 h-32 mx-auto rounded-full"
+      <Image
+        width={128}
+        height={128}
+        className="relative object-cover mx-auto rounded-full"
         src="/evan-marshall-profile.png"
         alt="AI generated portrait of Evan Marshall"
       />

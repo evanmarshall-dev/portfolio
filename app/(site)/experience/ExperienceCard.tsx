@@ -21,13 +21,14 @@ export default function ExperienceCard({}: Props) {
             Elysian Web Design (now freelancer)
           </p>
           <div className="flex my-2 space-x-2">
-            <img className="w-10 h-10 rounded-full" src="#" alt="" />
+            {/* TODO: Fix this with next/image and dynamically with sanity.io */}
+            {/* <img className="w-10 h-10 rounded-full" src="#" alt="" /> */}
             {/* Tech used */}
             {/* Tech used */}
             {/* Tech used */}
           </div>
           <p className="py-5 text-gray-300 uppercase">2017 - Present</p>
-          <ul className="ml-5 text-lg list-disc space-y-4">
+          <ul className="ml-5 space-y-4 text-lg list-disc">
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
