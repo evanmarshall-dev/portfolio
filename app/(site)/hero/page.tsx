@@ -29,6 +29,7 @@ export default function Hero({}: Props) {
         className="relative object-cover mx-auto rounded-full"
         src="/evan-marshall-profile.png"
         alt="AI generated portrait of Evan Marshall"
+        priority
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">

@@ -1,7 +1,10 @@
+import { FaFileCode } from "react-icons/fa6";
+
 const page = {
   name: "page",
   title: "Pages",
   type: "document",
+  icon: FaFileCode,
   fields: [
     {
       name: "title",

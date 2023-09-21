@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion";
 
-type Props = {};
+// import { getProfile } from "@/sanity/sanity-utils";
 
-export default function about({}: Props) {
+export default function about() {
+  // const profile = await getProfile();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

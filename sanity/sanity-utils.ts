@@ -3,6 +3,7 @@ import clientConfig from "./config/client-config";
 import { Project } from "@/types/Project";
 import { Page } from "@/types/Page";
 import { Experience } from "@/types/Experience";
+import { Profile } from "@/types/Profile";
 
 // This is where we will store all of the functions we will use to grab data.
 // * For getProjects we return a Promise which is an array of Projects. This allows us to specify TS types from types/project.ts.
@@ -68,6 +69,25 @@ export async function getExperiences(): Promise<Experience[]> {
       currentJob,
       "technologies": technologies[]->,
       points
+    }`
+  );
+}
+
+export async function getProfile(): Promise<Profile[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "profile"]{
+      _id,
+      _createdAt,
+      fullName,
+      headline,
+      profileImage {alt, "image": asset->url},
+      shortBio,
+      location,
+      fullBio,
+      email,
+      "resumeURL": resumeURL.asset->url,
+      socialLinks,
+      skills
     }`
   );
 }

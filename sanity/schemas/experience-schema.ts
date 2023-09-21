@@ -1,7 +1,10 @@
+import { FaBlackTie } from "react-icons/fa6";
+
 const experience = {
   name: "experience",
   title: "Experience",
   type: "document",
+  icon: FaBlackTie,
   fields: [
     {
       name: "title",

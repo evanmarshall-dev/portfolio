@@ -1,8 +1,11 @@
+import { FaSuitcase } from "react-icons/fa6";
+
 const project = {
   name: "project",
   // The title is what shows up in the studio.
   title: "Projects",
   type: "document",
+  icon: FaSuitcase,
   // The fields array contains a bunch of objects which each correspond to a field in the schema.
   fields: [
     {
