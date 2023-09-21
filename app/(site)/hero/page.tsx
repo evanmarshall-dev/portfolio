@@ -21,7 +21,7 @@ export default function Hero({}: Props) {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen space-y-8 overflow-hidden text-center">
+    <div className="flex flex-col items-center justify-center h-screen overflow-hidden text-center space-y-8">
       <BackgroundCircles />
       <Image
         width={128}

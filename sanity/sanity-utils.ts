@@ -2,6 +2,7 @@ import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
 import { Project } from "@/types/Project";
 import { Page } from "@/types/Page";
+import { Experience } from "@/types/Experience";
 
 // This is where we will store all of the functions we will use to grab data.
 // * For getProjects we return a Promise which is an array of Projects. This allows us to specify TS types from types/project.ts.
@@ -51,5 +52,22 @@ export async function getPage(slug: string): Promise<Page> {
       content
     }`,
     { slug }
+  );
+}
+
+export async function getExperiences(): Promise<Experience[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "experience"]{
+      _id,
+      _createdAt,
+      title,
+      "logo": logo.asset->url,
+      company,
+      startDate,
+      endDate,
+      currentJob,
+      "technologies": technologies[]->,
+      points
+    }`
   );
 }
