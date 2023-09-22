@@ -1,8 +1,8 @@
-import Hero from "./hero/page";
-import WorkExperience from "./experience/page";
-import Skills from "./skills/page";
-import Projects from "./projects/page";
-import Contact from "./contact/page";
+import Hero from "./components/Hero";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Image from "next/image";
 
 import { getProfile } from "@/sanity/sanity-utils";
@@ -51,7 +51,7 @@ export default async function Home() {
           ))}
       </section>
       <section id="experience" className="snap-center">
-        <WorkExperience />
+        <Experience />
       </section>
       <section id="skills" className="snap-start">
         <Skills />

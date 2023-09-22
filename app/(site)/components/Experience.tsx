@@ -1,11 +1,7 @@
-// "use client";
-
 // import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 
-type Props = {};
-
-export default function page({}: Props) {
+export default function Experience() {
   return (
     <div
       // initial={{ opacity: 0 }}
@@ -18,7 +14,6 @@ export default function page({}: Props) {
       </h3>
       <div className="flex w-full p-10 overflow-x-scroll space-x-5 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(255,83,61)]/80">
         <ExperienceCard />
-        {/* <ExperienceCard /> */}
       </div>
     </div>
   );

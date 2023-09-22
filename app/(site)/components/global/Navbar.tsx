@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-export default function nav() {
+export default function Navbar() {
   return (
     <header className="sticky top-0 z-20 flex items-start justify-between p-5 mx-auto max-w-7xl xl:items-center">
       <motion.div

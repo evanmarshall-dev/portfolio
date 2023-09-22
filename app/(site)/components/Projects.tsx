@@ -4,7 +4,7 @@ import { getProjects } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
-export default async function projects() {
+export default async function Projects() {
   // Because we defined the promise within sanity-utils.ts we can define types everywhere we call on getProjects function.
   const projects = await getProjects();
 

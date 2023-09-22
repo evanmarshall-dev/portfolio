@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaJedi } from "react-icons/fa6";
 
-export default function footer() {
+export default function Footer() {
   return (
     <footer>
       <Link href="#hero">
