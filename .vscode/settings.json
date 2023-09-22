@@ -19,5 +19,12 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.color": "#ff3d00",
-  "cSpell.words": ["groq", "hotspot", "portabletext", "tailwindcss", "uyscvx"]
+  "cSpell.words": [
+    "evanmarshall",
+    "groq",
+    "hotspot",
+    "portabletext",
+    "tailwindcss",
+    "uyscvx"
+  ]
 }
