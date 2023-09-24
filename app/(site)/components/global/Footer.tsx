@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="max-w-7xl mx-auto flex lg:flex-row flex-col items-center lg:justify-between justify-center gap-y-4 md:px-16 px-6 py-16 text-zinc-400 border-t-2 border-[#ab987a]/70">
-        <small className=" duration-200 font-mono">
+        <small className="font-mono  duration-200">
           <Link href="#hero">
             <span className="text-[#f5f5f5]">evanmarshall</span>
             <span className="text-[#ff533d]">.</span>
