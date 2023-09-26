@@ -8,11 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.{js, jsx, ts, tsx}": "eslint --cache --fix",
-    "*.{js, css, md}": "prettier --write"
+    "prepare": "husky install",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -43,6 +40,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@tailwindcss/typography": "^0.5.10",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
