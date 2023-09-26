@@ -20,8 +20,10 @@
   },
   "peacock.color": "#ff3d00",
   "cSpell.words": [
+    "commitlint",
     "evanmarshall",
     "groq",
+    "heroicons",
     "hotspot",
     "Pocketbase",
     "portabletext",
