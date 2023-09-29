@@ -7,7 +7,7 @@ import Skills from "./components/(homepage)/Skills";
 
 export default function Home() {
   return (
-    <div className="z-0 h-screen overflow-x-hidden overflow-y-scroll snap-y snap-mandatory scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(255,83,61)]/80">
+    <main className="z-0 h-screen overflow-x-hidden overflow-y-scroll snap-y snap-mandatory scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[rgb(255,83,61)]/80">
       <section id="hero" className="snap-start">
         <Hero />
       </section>
@@ -26,6 +26,6 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
-    </div>
+    </main>
   );
 }
