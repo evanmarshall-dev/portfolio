@@ -1,3 +1,5 @@
+// For the navbar to be SEO capable (crawling capable), it must be setup as a server component (mostly when there are multiple pages/routes).
+
 import "../globals.css";
 
 import Footer from "./components/global/Footer";
