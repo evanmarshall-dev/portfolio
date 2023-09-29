@@ -1,9 +1,9 @@
-import Hero from "./components/(homepage)/Hero";
 import About from "./components/(homepage)/About";
-import Experience from "./components/(homepage)/Experience";
-import Skills from "./components/(homepage)/Skills";
-import Projects from "./components/(homepage)/Projects";
 import Contact from "./components/(homepage)/Contact";
+import Experience from "./components/(homepage)/Experience";
+import Hero from "./components/(homepage)/Hero";
+import Projects from "./components/(homepage)/Projects";
+import Skills from "./components/(homepage)/Skills";
 
 export default function Home() {
   return (
