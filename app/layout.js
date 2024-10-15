@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import clsx from "clsx";
-// import FireFliesBackground from "@/components/FireFliesBackground";
+import FireFliesBackground from "@/components/FireFliesBackground";
 // import Sound from "@/components/Sound";
 
 const inter = Inter({
@@ -11,8 +11,8 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    template: "Title | %s | evanmarshall.dev",
-    default: "Title by evanmarshall.dev",
+    template: "%s | evanmarshall.dev",
+    default: "evanmarshall.dev",
   },
   description: "Description",
 };
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         )}
       >
         {children}
-        {/* <FireFliesBackground /> */}
+        <FireFliesBackground />
         {/* <Sound /> */}
         {/* <div id="my-modal" /> */}
       </body>
