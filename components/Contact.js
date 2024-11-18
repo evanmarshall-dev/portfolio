@@ -3,7 +3,7 @@ import Link from "next/link";
 function Contact() {
   return (
     <div className="container flex items-center justify-between w-full px-8 mx-auto mt-64 md:px-14 lg:px-24">
-      <section className="w-full">
+      <section className="w-full text-center md:text-left">
         <h2 id="hire" className="secondary-title">
           Hire me
         </h2>

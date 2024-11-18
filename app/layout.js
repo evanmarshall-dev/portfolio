@@ -36,16 +36,16 @@ export const metadata = {
     siteName: "evanmarshall.dev",
     images: [
       // {
-      //   url: "https://www.evanmarshall.dev/mobile-image.jpg",
+      //   url: "https://www.evanmarshall.dev/images/social_portrait.png",
       //   width: 425,
       //   height: 425,
-      //   alt: "",
+      //   alt: "Freelance web developer name and website domain, evanmarshall.dev. Image for mobile screens.",
       // },
       {
-        url: "https://www.evanmarshall.dev/images/evanmarshall.dev.png",
-        width: 600,
-        height: 400,
-        alt: "",
+        url: "https://www.evanmarshall.dev/images/social_landscape.png",
+        width: 1200,
+        height: 630,
+        alt: "Freelance web developer name and website domain, evanmarshall.dev",
       },
     ],
     locale: "en_CA",
@@ -65,7 +65,7 @@ export const metadata = {
     // siteId: "1467726470533754880",
     // creator: "@nextjs",
     // creatorId: "1467726470533754880",
-    images: ["https://www.evanmarshall.dev/images/evanmarshall.dev.png"],
+    images: ["https://www.evanmarshall.dev/images/social_landscape.png"],
   },
 };
 

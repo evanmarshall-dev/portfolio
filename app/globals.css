@@ -34,7 +34,7 @@ body {
 
 .secondary-title::before {
   content: "";
-  @apply block w-12 h-2 mb-1 rounded-full bg-sunset_orange;
+  @apply block w-12 h-2 mb-1 rounded-full bg-sunset_orange mx-auto md:mx-0;
 }
 
 .section-paragraph {
