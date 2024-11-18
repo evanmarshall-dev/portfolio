@@ -2,20 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* :root {
+  --color-wild-sand: #f5f5f5;
+  --color-ebony: #0f1626;
+  --color-sunset-orange: #ff533d;
+  --color-sandrift: #ab987a;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-roboto-mono);
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-wild-sand: #f5f5f5;
+    --color-ebony: #0f1626;
+    --color-sunset-orange: #ff533d;
+    --color-sandrift: #ab987a;
+    --font-sans: var(--font-inter);
+    --font-mono: var(--font-roboto-mono);
   }
+} */
+
+html,
+body {
+  @apply text-wild_sand bg-ebony font-mono;
+  scroll-behavior: smooth;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.secondary-title {
+  @apply text-3xl font-bold;
+}
+
+.secondary-title::before {
+  content: "";
+  @apply block w-12 h-2 mb-1 rounded-full bg-sunset_orange;
+}
+
+.section-paragraph {
+  @apply w-full max-w-3xl my-6 text-gray-400;
+}
+
+.left-percentage {
+  left: 5%;
+}
+
+/* .nav-dot {
+  transition: background 200ms, border-color 200ms;
+} */
+
+/* .selected-circle {
+  @apply border-brand-accent bg-brand-accent;
+} */
+
+.nav-dot:hover span {
+  opacity: 1;
 }
