@@ -35,12 +35,12 @@ export const metadata = {
     url: "https://www.evanmarshall.dev",
     siteName: "evanmarshall.dev",
     images: [
-      // {
-      //   url: "https://www.evanmarshall.dev/images/social_portrait.png",
-      //   width: 425,
-      //   height: 425,
-      //   alt: "Freelance web developer name and website domain, evanmarshall.dev. Image for mobile screens.",
-      // },
+      {
+        url: "https://www.evanmarshall.dev/images/social_portrait.png",
+        width: 630,
+        height: 630,
+        alt: "Freelance web developer name and website domain, evanmarshall.dev. Image for mobile screens.",
+      },
       {
         url: "https://www.evanmarshall.dev/images/social_landscape.png",
         width: 1200,
