@@ -36,7 +36,7 @@ function Hero() {
       </nav>
       <div className="flex flex-wrap mt-0 lg:ml-20 md:my-36">
         <div className="w-full">
-          <h1 className="text-4xl font-bold text-center md:text-6xl lg:text-7xl md:text-left">
+          <h1 className="text-4xl font-bold text-center md:text-6xl lg:text-7xl md:text-left font-sans">
             I create <br /> <span className="italic">beautiful</span> online
             experiences for your <span className="italic">business</span>
             <span className="text-sunset_orange">.</span>

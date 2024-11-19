@@ -45,14 +45,6 @@ body {
   left: 5%;
 }
 
-/* .nav-dot {
-  transition: background 200ms, border-color 200ms;
-} */
-
-/* .selected-circle {
-  @apply border-brand-accent bg-brand-accent;
-} */
-
 .nav-dot:hover span {
   opacity: 1;
 }

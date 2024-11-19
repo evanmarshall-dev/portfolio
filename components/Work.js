@@ -70,7 +70,7 @@ function Work() {
           Please enjoy a curated collection of my great clients
           <span className="text-sunset_orange">.</span>
         </p>
-        <div className="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => {
             const domain = new URL(project.href).hostname;
 
@@ -79,9 +79,6 @@ function Work() {
                 <Image
                   src={project.src}
                   alt={`Thumbnail of ${domain} website`}
-                  // width={150}
-                  // height={150}
-                  // className="object-cover w-full h-36 lg:h-72"
                 />
               </Link>
             );
