@@ -35,7 +35,7 @@ function Hero() {
         </div>
       </nav>
       <div className="flex flex-wrap mt-0 lg:ml-20 md:my-36">
-        <div className="w-full">
+        <div className="w-full md:w-3/4">
           <h1 className="text-4xl font-bold text-center md:text-6xl lg:text-7xl md:text-left font-sans">
             I create <br /> <span className="italic">beautiful</span> online
             experiences for your <span className="italic">business</span>
@@ -43,7 +43,7 @@ function Hero() {
           </h1>
           <Link
             href="#work"
-            className="flex justify-center w-full px-8 py-4 mt-12 space-x-3 font-bold border rounded md:w-1/3 md:justify-start border-sandrift text-wild_sand bg-sandrift hover:bg-ebony hover:border"
+            className="flex justify-center w-full px-8 py-4 mt-12 space-x-3 font-bold border rounded md:w-1/3 border-sandrift text-wild_sand bg-sandrift hover:bg-ebony hover:border"
           >
             <FaEye style={style} />
             <span>View my work.</span>
