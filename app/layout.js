@@ -1,5 +1,5 @@
 import "@/app/globals.css";
-import { inter, roboto_mono } from "@/app/fonts";
+import { inter, roboto_mono } from "@/libs/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
