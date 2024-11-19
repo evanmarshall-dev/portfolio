@@ -1,6 +1,7 @@
 import "@/app/globals.css";
 import { inter, roboto_mono } from "@/app/fonts";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ToTopBtn from "@/components/ToTopBtn";
 import NavMenu from "@/components/NavMenu";
@@ -72,7 +73,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-NR6RC3J5" />
       <body className={`${roboto_mono.variable} ${inter.variable} font-mono`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NR6RC3J5"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <NavMenu />
         {children}
         <ToTopBtn />
