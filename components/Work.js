@@ -1,5 +1,63 @@
 import Image from "next/image";
 import Link from "next/link";
+import glooscapPic from "@/public/images/glooscap_thumb.png";
+import hearmstrongPic from "@/public/images/hearmstrong_thumb.png";
+import quarterdeckPic from "@/public/images/quarterdeck_thumb.png";
+import hockleyDentistryPic from "@/public/images/hockley-dentistry_thumb.png";
+import gatesInsurancePic from "@/public/images/gatesinsurance_thumb.png";
+import TripleETechPic from "@/public/images/tripleetech_thumb.png";
+import kentfieldsPic from "@/public/images/kentfields_thumb.png";
+import safeguardPic from "@/public/images/safeguard_thumb.png";
+import steppingStonePic from "@/public/images/stepping-stone_thumb.png";
+import eliteAutoPic from "@/public/images/elite-auto_thumb.png";
+import acadiaRefrigePic from "@/public/images/acadia-refrige_thumb.png";
+
+const projects = [
+  {
+    href: "https://glooscapfirstnation.com/",
+    src: glooscapPic,
+  },
+  {
+    href: "https://www.hearmstrong.com/",
+    src: hearmstrongPic,
+  },
+  {
+    href: "https://www.quarterdeck.ca/",
+    src: quarterdeckPic,
+  },
+  {
+    href: "https://hockleyfamilydentistry.ca/",
+    src: hockleyDentistryPic,
+  },
+  {
+    href: "https://gatesinsurance.ca/",
+    src: gatesInsurancePic,
+  },
+  {
+    href: "https://tripleetech.ca/",
+    src: TripleETechPic,
+  },
+  {
+    href: "https://kentfields.ca/",
+    src: kentfieldsPic,
+  },
+  {
+    href: "https://safeguardservices.ca/",
+    src: safeguardPic,
+  },
+  {
+    href: "https://steppingstonepreschool.ca/",
+    src: steppingStonePic,
+  },
+  {
+    href: "https://www.eliteautoandglass.ca/",
+    src: eliteAutoPic,
+  },
+  {
+    href: "https://acadiarefrigeration.com/",
+    src: acadiaRefrigePic,
+  },
+];
 
 function Work() {
   return (
@@ -13,105 +71,21 @@ function Work() {
           <span className="text-sunset_orange">.</span>
         </p>
         <div className="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
-          <Link href="https://glooscapfirstnation.com/" target="_blank">
-            <Image
-              src="/images/glooscap_thumb.png"
-              alt="Thumbnail of glooscapfirstnation.com website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://www.hearmstrong.com/" target="_blank">
-            <Image
-              src="/images/hearmstrong_thumb.png"
-              alt="Thumbnail of hearmstrong.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://www.quarterdeck.ca/" target="_blank">
-            <Image
-              src="/images/quarterdeck_thumb.png"
-              alt="Thumbnail of quarterdeck.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://hockleyfamilydentistry.ca/" target="_blank">
-            <Image
-              src="/images/hockley-dentistry_thumb.png"
-              alt="Thumbnail of hockleyfamilydentistry.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://gatesinsurance.ca/" target="_blank">
-            <Image
-              src="/images/gatesinsurance_thumb.png"
-              alt="Thumbnail of gatesinsurance.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://tripleetech.ca/" target="_blank">
-            <Image
-              src="/images/tripleetech_thumb.png"
-              alt="Thumbnail of tripleetech.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://kentfields.ca/" target="_blank">
-            <Image
-              src="/images/kentfields_thumb.png"
-              alt="Thumbnail of kentfields.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://safeguardservices.ca/" target="_blank">
-            <Image
-              src="/images/safeguard_thumb.png"
-              alt="Thumbnail of safeguardservices.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://steppingstonepreschool.ca/" target="_blank">
-            <Image
-              src="/images/stepping-stone_thumb.png"
-              alt="Thumbnail of steppingstonepreschool.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://www.eliteautoandglass.ca/" target="_blank">
-            <Image
-              src="/images/elite-auto_thumb.png"
-              alt="Thumbnail of eliteautoandglass.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
-          <Link href="https://acadiarefrigeration.com/" target="_blank">
-            <Image
-              src="/images/acadia-refrige_thumb.png"
-              alt="Thumbnail of acadiarefrigeration.ca website"
-              width={150}
-              height={150}
-              className="object-cover w-full h-36 lg:h-72"
-            />
-          </Link>
+          {projects.map((project, index) => {
+            const domain = new URL(project.href).hostname;
+
+            return (
+              <Link key={index} href={project.href} target="_blank">
+                <Image
+                  src={project.src}
+                  alt={`Thumbnail of ${domain} website`}
+                  // width={150}
+                  // height={150}
+                  // className="object-cover w-full h-36 lg:h-72"
+                />
+              </Link>
+            );
+          })}
         </div>
       </section>
     </div>
