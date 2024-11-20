@@ -1,6 +1,6 @@
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
-import Work from "@/components/Work";
+import Contact from "@/app/ui/contact/Contact";
+import Hero from "@/app/ui/Hero";
+import Work from "@/app/ui/Work";
 
 export default function Home() {
   return (

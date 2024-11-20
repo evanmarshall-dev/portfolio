@@ -21,7 +21,7 @@ function Footer() {
               <span className="text-sandrift">dev</span>, All rights reserved
               <span className="text-sunset_orange">.</span>
             </p>
-            <div className="flex flex-col md:flex-row flex-wrap pt-2 space-x-2 font-medium sm:space-x-4 lg:pt-0">
+            <div className="flex flex-col md:flex-row pt-2 font-medium lg:pt-0">
               <a
                 href="https://www.linkedin.com/in/evan-marshall-dev/"
                 className="transition-colors hover:text-sandrift"

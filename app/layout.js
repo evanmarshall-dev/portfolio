@@ -1,11 +1,11 @@
-import "@/app/globals.css";
-import { inter, roboto_mono } from "@/libs/fonts";
+import "@/app/ui/globals.css";
+import { inter, roboto_mono } from "@/app/ui/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import ToTopBtn from "@/components/ToTopBtn";
-import NavMenu from "@/components/NavMenu";
-import Footer from "@/components/Footer";
+import ToTopBtn from "@/app/ui/ToTopBtn";
+import NavMenu from "@/app/ui/NavMenu";
+import Footer from "@/app/ui/Footer";
 
 export const metadata = {
   title: {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactForm from "@/app/ui/contact/ContactForm";
 
 function Contact() {
   return (
@@ -8,10 +9,15 @@ function Contact() {
           Hire me
         </h2>
         <p className="section-paragraph">
-          Feel free to to contact me any time, through any method below
+          Feel free to to contact me anytime via email, phone or contact form
+          below
           <span className="text-sunset_orange">.</span>
         </p>
-        <div className="grid w-full gap-8 mt-24 lg:grid-cols-2 lg:gap-32">
+        <br />
+        <div>
+          <ContactForm />
+        </div>
+        <div className="grid w-full gap-8 lg:grid-cols-2 lg:gap-32">
           <div className="mt-12">
             <Link href="tel:+19023855551" className="hover:text-sandrift">
               (902) 385-5551
