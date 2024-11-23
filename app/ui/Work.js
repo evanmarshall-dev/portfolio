@@ -11,6 +11,7 @@ import safeguardPic from "@/public/images/safeguard_thumb.png";
 import steppingStonePic from "@/public/images/stepping-stone_thumb.png";
 import eliteAutoPic from "@/public/images/elite-auto_thumb.png";
 import acadiaRefrigePic from "@/public/images/acadia-refrige_thumb.png";
+import fleetworxPic from "@/public/images/fleetworx_thumb.png";
 
 const projects = [
   {
@@ -56,6 +57,10 @@ const projects = [
   {
     href: "https://acadiarefrigeration.com/",
     src: acadiaRefrigePic,
+  },
+  {
+    href: "https://fleetworxinc.ca/",
+    src: fleetworxPic,
   },
 ];
 
