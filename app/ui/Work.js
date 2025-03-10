@@ -19,13 +19,13 @@ const projects = [
     src: glooscapPic,
   },
   {
-    href: "https://www.hearmstrong.com/",
+    href: "https://www.valleyburnerservice.com/",
     src: hearmstrongPic,
   },
-  {
-    href: "https://www.quarterdeck.ca/",
-    src: quarterdeckPic,
-  },
+  // {
+  //   href: "https://www.quarterdeck.ca/",
+  //   src: quarterdeckPic,
+  // },
   {
     href: "https://hockleyfamilydentistry.ca/",
     src: hockleyDentistryPic,
@@ -38,10 +38,10 @@ const projects = [
     href: "https://tripleetech.ca/",
     src: TripleETechPic,
   },
-  {
-    href: "https://kentfields.ca/",
-    src: kentfieldsPic,
-  },
+  // {
+  //   href: "https://kentfields.ca/",
+  //   src: kentfieldsPic,
+  // },
   {
     href: "https://safeguardservices.ca/",
     src: safeguardPic,
