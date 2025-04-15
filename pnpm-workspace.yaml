@@ -1,0 +1,4 @@
+onlyBuiltDependencies:
+  - '@vercel/speed-insights'
+  - core-js
+  - sharp
