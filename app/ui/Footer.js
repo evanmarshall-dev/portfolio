@@ -30,6 +30,7 @@ function Footer() {
               >
                 LinkedIn
               </a>
+              &nbsp; | &nbsp;
               <a
                 href="https://github.com/evanmarshall-dev"
                 className="transition-colors hover:text-sandrift"

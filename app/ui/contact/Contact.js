@@ -6,7 +6,7 @@ function Contact() {
     <div className="container flex items-center justify-between w-full px-8 mx-auto mt-64 md:px-14 lg:px-24">
       <section className="w-full text-center md:text-left">
         <h2 id="hire" className="secondary-title">
-          Hire me
+          Hire Me As Your Web Developer
         </h2>
         <p className="section-paragraph">
           Feel free to to contact me anytime via email, phone or contact form

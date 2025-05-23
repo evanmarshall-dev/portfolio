@@ -8,13 +8,146 @@ import NavMenu from "@/app/ui/NavMenu";
 import Footer from "@/app/ui/Footer";
 import { CSPostHogProvider } from "@/app/utils/provider";
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Evan Marshall",
+  jobTitle: "Expert Web Developer",
+  url: "https://www.evanmarshall.dev",
+  image: "https://www.evanmarshall.dev/images/social_portrait.png",
+  email: "mailto:me@evanmarshall.dev",
+  telephone: "+1-902-385-5551",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Kentville",
+    addressRegion: "NS",
+    addressCountry: "CA",
+  },
+  sameAs: [
+    "https://github.com/evanmarshall-dev",
+    "https://www.linkedin.com/in/evan-marshall-dev",
+  ],
+  knowsAbout: [
+    "Web Development",
+    "Web Design",
+    "Front-End Development",
+    "Full-Stack Development",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Responsive Web Design",
+    "Website Optimization",
+    "E-commerce Development",
+    "CMS Development (WordPress, Shopify, Squarespace, Wix)",
+    "Custom Website Build and Design",
+  ],
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Web Development",
+  name: "Expert Web Development Services",
+  description:
+    "Evan Marshall provides skilled web development services, specializing in creating beautiful, effective, and optimized online experiences. Offering custom design, development, and maintenance for business websites.",
+  provider: {
+    "@type": "Person",
+    name: "Evan Marshall",
+    url: "https://www.evanmarshall.dev",
+  },
+  areaServed: [
+    {
+      "@type": "Place",
+      name: "Kentville",
+    },
+    {
+      "@type": "Place",
+      name: "Annapolis Valley",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Nova Scotia",
+    },
+    {
+      "@type": "Country",
+      name: "Canada",
+    },
+    {
+      "@type": "Country",
+      name: "United States",
+    },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Web Development Service Offerings",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Custom Website Design and Build",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Front-End Development" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Full-Stack Development" },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "E-commerce Website Development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "CMS Development (WordPress, Shopify, Squarespace, Wix)",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Website Optimization and Consultation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: "Online Website Management" },
+      },
+    ],
+  },
+  potentialAction: {
+    "@type": "CommunicateAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.evanmarshall.dev/#hire",
+      inLanguage: "en_CA",
+      actionPlatform: [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform",
+      ],
+    },
+    name: "Contact Evan Marshall for Web Development Services",
+  },
+};
+
 export const metadata = {
   title: {
-    template: "evanmarshall.dev | %s",
-    default: "evanmarshall.dev",
+    template:
+      "Expert Web Developer - Evan Marshall | Building Your Online Presence | %s",
+    default:
+      "Expert Web Developer - Evan Marshall | Building Your Online Presence",
   },
   description:
-    "Need help getting your business online, looking great, fast, and working for you? Contact your local web developer for a free consultation. You can reach me by email at me@evanmarshall.dev",
+    "Evan Marshall is a skilled web developer specializing in creating beautiful and effective online experiences. Contact me for custom design, development, and maintenance for your website.",
   keywords: [
     "web developer",
     "canada website",
@@ -44,9 +177,10 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "evanmarshall.dev",
+    title:
+      "Expert Web Developer - Evan Marshall | Building Your Online Presence",
     description:
-      "Need help getting your business online, looking great, fast, and working for you? Contact your local web developer for a free consultation. You can reach me by email at me@evanmarshall.dev",
+      "Evan Marshall is a skilled web developer specializing in creating beautiful and effective online experiences. Contact me for custom design, development, and maintenance for your website.",
     url: "https://www.evanmarshall.dev",
     siteName: "evanmarshall.dev",
     images: [
@@ -74,19 +208,34 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "evanmarshall.dev",
+    title:
+      "Expert Web Developer - Evan Marshall | Building Your Online Presence",
     description:
-      "Need help getting your business online, looking great, fast, and working for you? Contact your local web developer for a free consultation. You can reach me by email at me@evanmarshall.dev",
+      "Evan Marshall is a skilled web developer specializing in creating beautiful and effective online experiences. Contact me for custom design, development, and maintenance for your website.",
     // siteId: "1467726470533754880",
     // creator: "@nextjs",
     // creatorId: "1467726470533754880",
     images: ["https://www.evanmarshall.dev/images/social_landscape.png"],
+  },
+  other: {
+    "application/ld+json_person": JSON.stringify(personSchema),
+    "application/ld+json_service": JSON.stringify(serviceSchema),
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+      </head>
       <GoogleTagManager gtmId="GTM-NR6RC3J5" />
       <CSPostHogProvider>
         <body className={`${roboto_mono.variable} ${inter.variable} font-mono`}>
