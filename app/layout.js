@@ -6,7 +6,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import ToTopBtn from "@/app/ui/ToTopBtn";
 import NavMenu from "@/app/ui/NavMenu";
 import Footer from "@/app/ui/Footer";
-import { CSPostHogProvider } from "@/app/utils/provider";
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -237,24 +236,22 @@ export default function RootLayout({ children }) {
         />
       </head>
       <GoogleTagManager gtmId="GTM-NR6RC3J5" />
-      <CSPostHogProvider>
-        <body className={`${roboto_mono.variable} ${inter.variable} font-mono`}>
-          <noscript>
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-NR6RC3J5"
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-            ></iframe>
-          </noscript>
-          <NavMenu />
-          {children}
-          <ToTopBtn />
-          <Analytics />
-          <SpeedInsights />
-          <Footer />
-        </body>
-      </CSPostHogProvider>
+      <body className={`${roboto_mono.variable} ${inter.variable} font-mono`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NR6RC3J5"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        <NavMenu />
+        {children}
+        <ToTopBtn />
+        <Analytics />
+        <SpeedInsights />
+        <Footer />
+      </body>
     </html>
   );
 }
