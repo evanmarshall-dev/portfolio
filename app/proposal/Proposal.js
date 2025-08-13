@@ -154,7 +154,7 @@ export default function Proposal() {
               Marketplace, B2B, Direct-to-Consumer, and dropship expansion. This
               project delivers a complete redesign and rebuild focused on
               performance, clarity, and conversions, while enabling
-              SoldThrough's non-technical team to update content in-house.
+              SoldThrough&#39;s non-technical team to update content in-house.
             </p>
           </section>
           {/* Objectives */}
@@ -335,7 +335,7 @@ export default function Proposal() {
                 </p>
                 <p style={{ margin: 0, opacity: 0.9 }}>
                   Approve the proposal, sign the agreement with a 30% deposit,
-                  and we'll schedule the kickoff.
+                  and we&#39;ll schedule the kickoff.
                 </p>
               </div>
               <button className="btn" type="button">
