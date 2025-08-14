@@ -188,7 +188,7 @@ export default function ContractorAgreement() {
               <strong>
                 {agreementText[0].client}, {agreementText[0].clientAddress}
               </strong>{" "}
-              (the "Company")
+              (the &#34;Company&#34;)
             </p>
             <p className="mt-2">
               and{" "}
@@ -197,7 +197,7 @@ export default function ContractorAgreement() {
                 {agreementText[1].contractorBusinessName},{" "}
                 {agreementText[1].contractorAddress}
               </strong>{" "}
-              (the "Contractor")
+              (the &#34;Contractor&#34;)
             </p>
           </header>
 
@@ -230,8 +230,8 @@ export default function ContractorAgreement() {
 
             <h2 className="text-lg font-semibold mt-6">2. Term</h2>
             <p>
-              The Agreement shall commence on <em>Date</em> (the "Effective
-              Date") and continue unless and until terminated under{" "}
+              The Agreement shall commence on <em>Date</em> (the &#34;Effective
+              Date&#34;) and continue unless and until terminated under{" "}
               <a href="apx-10">Article 10</a>.
             </p>
 
@@ -240,10 +240,10 @@ export default function ContractorAgreement() {
             </h2>
             <p>
               The Contractor shall be engaged to provide the services set forth
-              in Appendix A (the "Services") and shall faithfully, honestly and
-              diligently perform the Services, act in good faith in the best
-              interests of the Company, observe lawful orders, and provide
-              periodic reports as required.
+              in Appendix A (the &#34;Services&#34;) and shall faithfully,
+              honestly and diligently perform the Services, act in good faith in
+              the best interests of the Company, observe lawful orders, and
+              provide periodic reports as required.
             </p>
 
             <h2 className="text-lg font-semibold mt-6">
