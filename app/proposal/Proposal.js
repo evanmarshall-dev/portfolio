@@ -1,6 +1,21 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+
+function AgreementButton() {
+  const router = useRouter();
+  return (
+    <button
+      className="btn"
+      type="button"
+      onClick={() => router.push("/agreement")}
+      aria-label="Go to Contractor Agreement"
+    >
+      Approve Proposal
+    </button>
+  );
+}
 
 export default function Proposal() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -9,10 +24,16 @@ export default function Proposal() {
   const inputRef = useRef(null);
   const PASSWORD = "SoldThrough2025";
 
-  // Focus input on mount
+  // On mount, check sessionStorage for authentication
   React.useEffect(() => {
-    if (!authenticated && inputRef.current) {
-      inputRef.current.focus();
+    if (typeof window !== "undefined") {
+      if (
+        window.sessionStorage.getItem("soldthrough-authenticated") === "true"
+      ) {
+        setAuthenticated(true);
+      } else if (!authenticated && inputRef.current) {
+        inputRef.current.focus();
+      }
     }
   }, [authenticated]);
 
@@ -21,6 +42,9 @@ export default function Proposal() {
     if (input === PASSWORD) {
       setAuthenticated(true);
       setError("");
+      if (typeof window !== "undefined") {
+        window.sessionStorage.setItem("soldthrough-authenticated", "true");
+      }
     } else {
       setError("Incorrect password. Please try again.");
       setInput("");
@@ -338,9 +362,7 @@ export default function Proposal() {
                   and we&#39;ll schedule the kickoff.
                 </p>
               </div>
-              <button className="btn" type="button">
-                Approve Proposal
-              </button>
+              <AgreementButton />
             </div>
           </section>
         </div>
